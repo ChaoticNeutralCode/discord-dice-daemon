@@ -1,0 +1,41 @@
+{
+  "name": "discord-dice-daemon",
+  "version": "1.0.0",
+  "description": "Open source dice roller for discord.",
+  "main": "dist/main.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.6",
+    "babel-jest": "^26.0.1",
+    "del-cli": "^3.0.1",
+    "jest": "^26.0.1",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "node ./node_modules/del-cli/cli.js dist -f",
+    "build": "npm run clean && tsc",
+    "start:dev": "npm run build && npm start",
+    "start": "node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaoticNeutralCode/discord-dice-daemon.git"
+  },
+  "author": {
+    "name": "Richard Key",
+    "email": "totally@radrichard.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ChaoticNeutralCode/discord-dice-daemon/issues"
+  },
+  "homepage": "https://github.com/ChaoticNeutralCode/discord-dice-daemon#readme"
+}
