@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import Discord, { MessageEmbed, EmbedField } from "discord.js";
 import { CommandParser } from './parser/parser';
 import { Roller } from './roller/roller';

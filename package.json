@@ -4,8 +4,7 @@
   "description": "Open source dice roller for discord.",
   "main": "dist/main.js",
   "dependencies": {
-    "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0"
+    "discord.js": "^12.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -22,8 +21,7 @@
     "test": "jest",
     "clean": "node ./node_modules/del-cli/cli.js dist -f",
     "build": "npm run clean && tsc",
-    "start:dev": "npm run build && npm start",
-    "start": "node dist/main.js"
+    "start:dev": "npm run build && npm start"    
   },
   "repository": {
     "type": "git",
