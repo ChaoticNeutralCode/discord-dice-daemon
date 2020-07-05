@@ -21,7 +21,7 @@
     "test": "jest",
     "clean": "node ./node_modules/del-cli/cli.js dist -f",
     "build": "npm run clean && tsc",
-    "start:dev": "npm run build && npm start"    
+    "start:dev": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
